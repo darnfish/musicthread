@@ -1,0 +1,19 @@
+{
+  "name": "musicthread",
+  "version": "1.0.0",
+  "description": "API wrapper for MusicThread",
+  "main": "./lib/index.js",
+  "repository": "https://github.com/darnfish/musicthread.git",
+  "author": "William Gibson <william@darn.fish>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:dev": "tsc-watch --onSuccess \"yarn test\" --compiler typescript/bin/tsc",
+    "lint": "eslint src --ext .ts,.json",
+    "lint:fix": "yarn lint --fix"
+  },
+  "dependencies": {
+    "axios": "^1.3.2"
+  }
+}
